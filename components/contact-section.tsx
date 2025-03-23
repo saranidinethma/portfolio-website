@@ -116,7 +116,7 @@ const ContactSection = () => {
           </motion.div>
         </div>
 
-        <div className="mt-16 text-center text-white text-sm">© All Right Reserved by Rohan Patil</div>
+        
       </div>
     </section>
   )
