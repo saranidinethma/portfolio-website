@@ -11,14 +11,17 @@ import ContactSection from "@/components/contact-section"
 import ScrollControls from "@/components/scroll-controls"
 import Lenis from "@studio-freight/lenis"
 
+// Optional: Define interface here if not in a separate file
+interface NavbarProps {
+  activeSection: string;
+}
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home")
   const [isLoading, setIsLoading] = useState(true)
-
   const sections = ["home", "about", "skills", "projects", "contact"]
 
   useEffect(() => {
-    // Initialize smooth scrolling
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -31,12 +34,10 @@ export default function Home() {
 
     requestAnimationFrame(raf)
 
-    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false)
     }, 1000)
 
-    // Intersection observer for sections
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -52,10 +53,8 @@ export default function Home() {
       observer.observe(section)
     })
 
-    // Add keyboard navigation
     const handleKeyDown = (e: KeyboardEvent) => {
       const currentIndex = sections.indexOf(activeSection)
-
       if (e.key === "ArrowDown" && currentIndex < sections.length - 1) {
         const nextSection = document.getElementById(sections[currentIndex + 1])
         if (nextSection) nextSection.scrollIntoView({ behavior: "smooth" })
@@ -106,4 +105,3 @@ export default function Home() {
     </main>
   )
 }
-
