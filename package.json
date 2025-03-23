@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.2",
     "@studio-freight/lenis": "^1.0.33",
     "clsx": "^2.1.1",
     "framer-motion": "^10.18.0",

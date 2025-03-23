@@ -37,7 +37,6 @@ const ScrollControls = ({ sections, activeSection }: ScrollControlsProps) => {
         >
           <Button
             variant="outline"
-           
             onClick={scrollToTop}
             className="rounded-full w-12 h-12"
           >
