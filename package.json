@@ -19,15 +19,21 @@
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
+    "@eslint-community/eslint-utils": "^4.5.1",
+    "@eslint/js": "^9.23.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
     "autoprefixer": "^10.4.21",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.3",
+    "eslint-plugin-react": "^7.37.4",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8.27.0"
   }
 }

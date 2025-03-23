@@ -39,7 +39,7 @@ const SkillsSection = () => {
   const backendSkills: Skill[] = [
     { name: "Node.js", level: 8, icon: <Server size={20} />, color: "#22c55e" },
     { name: "Java", level: 7, icon: <Code size={20} />, color: "#f43f5e" },
-    { name: "MongoDB", level: 6, icon: <Layers size={20} />, color: "#22c55e" },
+  
     { name: "SQL", level: 7, icon: <Layers size={20} />, color: "#38bdf8" },
     { name: "Flutter", level: 8, icon: <Star size={20} />, color: "#a78bfa" },
   ]
