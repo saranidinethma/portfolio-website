@@ -8,7 +8,6 @@ import AboutSection from "@/components/about-section"
 import ProjectsSection from "@/components/projects-section"
 import SkillsSection from "@/components/skills-section"
 import ContactSection from "@/components/contact-section"
-import ScrollControls from "@/components/scroll-controls"
 import Lenis from "@studio-freight/lenis"
 
 // Optional: Define interface here if not in a separate file
@@ -93,7 +92,7 @@ export default function Home() {
     <main className="flex min-h-screen bg-dark relative overflow-hidden">
       <div className="flex-1 relative">
         <Navbar activeSection={activeSection} />
-        <ScrollControls sections={sections} activeSection={activeSection} />
+        
         <div className="relative">
           <HomeSection />
           <AboutSection />
