@@ -58,13 +58,13 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Social Dashboard",
+      title: "Secret Santa ",
       date: "June 2023",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/Screenshot 2025-03-24 at 18.14.56.png",
       description:
-        "A social media dashboard that aggregates content from multiple platforms. Features include content scheduling, analytics, and custom reporting.",
+        "Virtual Secret Santa is a web app that automates Secret Santa gift exchanges by randomly assigning recipients while keeping matches secret. Built with React, Node.js, Express, and PostgreSQL",
       tags: ["Vue.js", "Express", "MongoDB"],
-      liveUrl: "https://project3.example.com",
+      liveUrl: "https://virtual-secret-santa.vercel.app/",
     },
     {
       id: 4,
